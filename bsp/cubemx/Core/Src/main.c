@@ -77,7 +77,7 @@ void MX_FREERTOS_Init(void);
 /* Private function prototypes -----------------------------------------------*/
 
 /* USER CODE END PFP */
-/
+//
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
