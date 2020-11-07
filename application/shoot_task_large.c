@@ -26,10 +26,13 @@ void shoot_task_large(void const *argument){
 	
 	//PWM Initialize
 	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
-	 
+	__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,2000);
+	osDelayUntil(&period,2000);
+	__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,1000);
+	osDelayUntil(&period,1750);
 
     while(1){
-
+__HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,1500);
 			
 			//Idle time for the system 
 			osDelayUntil(&period,5);
